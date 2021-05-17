@@ -1,0 +1,792 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color:white;
+    padding: 26px 56px;
+}
+.navbar .navbar-brand{
+    font-size: 40px;
+    margin: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+#navbar-brand{
+    color:black;
+}
+.navbar button{
+    border: 1px solid black;
+    background: none;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+    font-size: 20px;
+}
+.navbar .btn1:hover{
+ color: white;
+ background-color: black;
+}
+.section1{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 85px;
+    background-color: white;
+}
+.section1 h1{
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Comfortaa', cursive;
+}
+.section1 p{
+    font-size: 25px;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+.section1 .img img{
+    height: 300px;
+}
+.social{
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+.social .fab{
+    font-size: 35px;
+    letter-spacing: 25px;
+    color: #3498db;
+}
+.social .fab:hover{
+    color: black;
+    transition: 0.8s;
+}
+.section2{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #7510F7;
+    color: black;
+    padding: 100px;
+    position: relative;
+}
+
+
+
+
+.section2 .desc h1{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+.section2 .desc p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.section2 .row div{
+    background-color: white;
+    color: black;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    padding-bottom: 35px;
+    font-family: 'Comfortaa', cursive;
+}
+.section2 .row div .fas, .fab{
+    font-size: 60px;
+    color: #3498db;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.section2 .row div h5{
+    padding-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+.section2 .row div p{
+    font-size: 20px;
+    font-weight: 900;
+}
+.section2 .row{
+    margin-top: 65px;
+}
+.section2 .btn{
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 0px 25px;
+    margin-top: 65px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+}
+.section2 .btn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+.section2 .btn .fab{
+    font-size: 20px;
+    margin-right: 15px;
+}
+/*****This style for cards*/
+/* 
+    ================================
+        Best Viewed In Full Page
+    ================================
+*/
+
+/* Hover over a card to flip, can tab too. */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* default */
+
+
+/* body */
+.section3 {
+  min-height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+  font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* .flip-card-container */
+.flip-card-container {
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: hsl(0, 0%, 90%);
+  --white-2: hsl(0, 0%, 80%);
+  --dark: hsl(var(--hue), 25%, 10%);
+  --grey: hsl(0, 0%, 50%);
+
+  width: 310px;
+  height: 500px;
+  margin: 40px;
+
+  perspective: 1000px;
+}
+
+/* .flip-card */
+.flip-card {
+  width: inherit;
+  height: inherit;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* figure */
+figure {
+  z-index: -1;
+}
+
+/* figure, .img-bg */
+figure,
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* img */
+img {
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* figcaption */
+figcaption {
+  display: block;
+
+  width: auto;
+  margin-top: 12%;
+  padding: 8px 22px;
+
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-align: right;
+
+  position: absolute;
+  top: 0;
+  right: 12px;
+
+  color: var(--white-1);
+  background: hsla(var(--hue), 25%, 10%, .5);
+}
+
+/* .img-bg */
+.img-bg {
+  background: hsla(var(--hue), 25%, 10%, .5);
+}
+
+.card-front .img-bg {
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+}
+
+.card-front .img-bg::before {
+  content: "";
+
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(18deg);
+
+  width: 100%;
+  height: 6px;
+  border: 1px solid var(--primary);
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  transition: .1s;
+}
+
+.card-back .img-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  background-color: #3498db;
+}
+
+/* hover state */
+.flip-card-container:hover .card-front .img-bg::before {
+  width: 6px;
+  border-left-color: var(--primary);
+  border-right-color: var(--primary);
+}
+
+
+/* button */
+.section3 .button {
+  font-family: inherit;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 9px 20px;
+  border: 3px solid black;
+  background: transparent;
+  transition: .3s;
+  cursor: pointer;
+  font-family: 'Comfortaa', cursive;
+}
+
+.button:hover,
+.button:focus {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  transition: 0.8s;
+}
+
+.button:active {
+  transform: translate(2px);
+}
+
+/* .design-container */
+.design-container {
+  --tr: 90;
+  --op: .5;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+/* .design */
+.design {
+  display: block;
+
+  background: var(--grey);
+  position: absolute;
+
+  opacity: var(--op);
+  transition: .3s;
+}
+
+.design--1,
+.design--2,
+.design--3,
+.design--4 {
+  width: 1px;
+  height: 100%;
+}
+
+.design--1,
+.design--2 {
+  top: 0;
+  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
+}
+
+.design--1 {
+  left: 20%;
+}
+
+.design--2 {
+  left: 80%;
+}
+
+.design--3,
+.design--4 {
+  bottom: 0;
+  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design--3 {
+  left: 24%;
+}
+
+.design--4 {
+  left: 76%;
+}
+
+.design--5,
+.design--6,
+.design--7,
+.design--8 {
+  width: 100%;
+  height: 1px;
+}
+
+.design--5,
+.design--6 {
+  left: 0;
+  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.design--5 {
+  top: 41%;
+}
+
+.design--6 {
+  top: 59%;
+}
+
+.design--7,
+.design--8 {
+  right: 0;
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design--7 {
+  top: 44%;
+}
+
+.design--8 {
+  top: 56%;
+}
+
+/* states */
+.button:hover+.design-container,
+.button:active+.design-container,
+.button:focus+.design-container {
+  --tr: 20;
+  --op: .7;
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 16px;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+.section3 .info h5{
+    color: white;
+}
+.section3 .info{
+    padding-top: 55px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+.card-heading{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    line-height: 45px;
+    background-color: white;
+}
+.card-heading h1{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    color: black;
+}
+.card-heading p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    color: black;
+    font-size: 25px;
+}
+.btn-button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 65px;
+    padding-top: 15px;
+}
+.btn-button .btn5{
+    border: 3px solid black;
+    color:black;
+    text-decoration: none;
+    padding: 16px 25px;
+    margin-top: 65px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+}
+.btn-button .btn5:hover{
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+.section4{
+    background-color: #7510F7;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.heading-section4{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    
+}
+.heading-section4 h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.heading-section4 p{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 65px;
+}
+.section4 .btn-section4{
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 16px 26px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    font-size: 20px;
+}
+.section4 .btn-section4:hover{
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
+.section5{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#testimonials{
+  padding-top: 100px;
+}
+.testimonial{
+  text-align: center;
+  padding: 85px 50px 95px 70px;
+  margin: 70px 15px 35px;
+  background: #f9f9f9;
+  box-shadow: 8px 4px 0 0 #7510F7;
+  position: relative;
+}
+.testimonial .pic{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .description{
+  font-size: 25px;
+  padding-top: 45px;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  line-height: 27px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.testimonial .description:before{
+  content: "\f10d";
+  font-family: "FontAwesome";
+  font-size: 32px;
+  color: #7510F7;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+}
+.testimonial .testimonial-profile{
+  position: relative;
+  margin: 20px 0 10px 0;
+}
+.testimonial .testimonial-profile:after{
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #7510F7;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+.testimonial .title{
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.testimonial .post{
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+  text-transform: capitalize;
+}
+.owl-theme .owl-controls{
+  margin-top: 10px;
+}
+.owl-theme .owl-controls .owl-page span{
+  background: #5e5f5f;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  background: #77a9dd;
+}
+.owl-theme .owl-controls .owl-page.active span{
+  width: 22px;
+  height: 12px;
+}
+.heading-testimonial{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 95px;
+}
+#testimonials .heading-testimonial h1{
+  font-size: 60px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+#testimonials .heading-testimonial p{
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+
+
+
+
+/*****This style for cards*/
+/****This is style for section6*/
+.section6{
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+ .section6 .col-sm{
+  padding: 35px;
+  background-color:black;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  justify-content: center;
+  align-items: center;
+}
+#col-sm1{
+  font-size: 35px;
+  font-weight: 900;
+  padding-right: 55px;
+}
+.btn-3{
+  text-decoration: none;
+  color: white;
+  border: 3px solid #7510F7;
+  padding: 16px 25px;
+}
+@media only screen and (max-width: 1300px){
+  .section6 .btn-3{
+    display: block;
+  }
+}
+
+
+
+
+
+#col-sm3{
+  padding-top: 55px;
+  padding-left: 55px;
+}
+.btn-3:hover{
+  background-color: #7510F7;
+  color: white;
+  transition: 0.8s;
+}
+
+
+
+
+
+/****This is style for section6*/
+
+
+
+
+#button-addon1 {
+  color: #ffc371;
+  border: none;
+}
+#button-addon1{
+  outline: none;
+}
+
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+footer{
+  background-color: #7510F7;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+footer .row{
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+footer .col-logo h1{
+  font-size: 60px;
+  font-family: 'Orbitron', sans-serif;
+}
+footer .col-logo p{
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  padding-top: 20px;
+  line-height: 35px;
+}
+.list-inline .list-inline-item{
+  font-size: 30px;
+}
+.list-inline .list-inline-item i:hover{
+  color: black;
+  transition: 0.8s;
+}
+.list-inline .list-inline-item i{
+  color: white;
+}
+.list-unstyled li i{
+  color: white;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+/***This copdes for footer*/
+
